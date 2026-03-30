@@ -1,4 +1,12 @@
-# Claude Code Configuration - RuFlo V3
+# Claude Code Configuration - ClaudeBudget
+
+## Project
+
+Personal Finance Command Center — Google Sheets workbook managed via Python scripts and the Google Workspace MCP/CLI.
+
+- **Spreadsheet ID**: `1DEaFJvnXOM_B9GglT6sKXZzq0lCYF__EP_reMm3qu-w`
+- **Language**: Python 3
+- **External API**: Google Sheets API (via Workspace MCP)
 
 ## Behavioral Rules (Always Enforced)
 
@@ -6,53 +14,27 @@
 - NEVER create files unless they're absolutely necessary for achieving your goal
 - ALWAYS prefer editing an existing file to creating a new one
 - NEVER proactively create documentation files (*.md) or README files unless explicitly requested
-- NEVER save working files, text/mds, or tests to the root folder
-- Never continuously check status after spawning a swarm — wait for results
 - ALWAYS read a file before editing it
 - NEVER commit secrets, credentials, or .env files
 
 ## File Organization
 
-- NEVER save to root folder — use the directories below
-- Use `/src` for source code files
-- Use `/tests` for test files
-- Use `/docs` for documentation and markdown files
-- Use `/config` for configuration files
-- Use `/scripts` for utility scripts
-- Use `/examples` for example code
-
-## Project Architecture
-
-- Follow Domain-Driven Design with bounded contexts
-- Keep files under 500 lines
-- Use typed interfaces for all public APIs
-- Prefer TDD London School (mock-first) for new code
-- Use event sourcing for state changes
-- Ensure input validation at system boundaries
-
-### Project Config
-
-- **Topology**: hierarchical-mesh
-- **Max Agents**: 15
-- **Memory**: hybrid
-- **HNSW**: Enabled
-- **Neural**: Enabled
+- Use `/scripts` for Python utility scripts
+- Use `/gws_json` for Google Workspace JSON payloads and PowerShell upload scripts
+- Use `/gws_json/months` for per-month format/payload JSON and upload scripts
 
 ## Build & Test
 
 ```bash
-# Build
-npm run build
-
-# Test
-npm test
-
-# Lint
-npm run lint
+# Run a script
+python scripts/import_bank_csv.py <csv_file> [--month 1-12] [--year 2026] [--dry-run]
+python scripts/setup_dashboard.py
+python scripts/setup_debt_payoff.py
+python scripts/setup_monthly_tabs.py
+python scripts/setup_subscriptions.py
 ```
 
-- ALWAYS run tests after making code changes
-- ALWAYS verify build succeeds before committing
+- NEVER commit secrets, credentials, or .env files
 
 ## Security Rules
 
