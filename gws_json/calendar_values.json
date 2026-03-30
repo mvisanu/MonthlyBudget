@@ -1,0 +1,31 @@
+{
+  "valueInputOption": "USER_ENTERED",
+  "data": [
+    {"range": "'📆 Smart Calendar'!A1", "values": [["📆 SMART CALENDAR"]]},
+    {"range": "'📆 Smart Calendar'!A2:D2", "values": [["Year:", 2025, "Month:", 1]]},
+    {"range": "'📆 Smart Calendar'!A3:G3", "values": [["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]]},
+    {"range": "'📆 Smart Calendar'!A4:G4", "values": [["", "", "", 1, 2, 3, 4]]},
+    {"range": "'📆 Smart Calendar'!A5:G5", "values": [[5, 6, 7, 8, 9, 10, 11]]},
+    {"range": "'📆 Smart Calendar'!A6:G6", "values": [[12, 13, 14, 15, 16, 17, 18]]},
+    {"range": "'📆 Smart Calendar'!A7:G7", "values": [[19, 20, 21, 22, 23, 24, 25]]},
+    {"range": "'📆 Smart Calendar'!A8:G8", "values": [[26, 27, 28, 29, 30, 31, ""]]},
+    {"range": "'📆 Smart Calendar'!A10", "values": [["EVENT SOURCE TABLE"]]},
+    {"range": "'📆 Smart Calendar'!A11:F11", "values": [["Event Type", "Event Name", "Day of Month", "Amount ($)", "Recurring?", "Account/Source"]]},
+    {"range": "'📆 Smart Calendar'!A12:F12", "values": [["Payday", "Primary Paycheck 1", 1, 4500, "Yes", "Direct Deposit"]]},
+    {"range": "'📆 Smart Calendar'!A13:F13", "values": [["Payday", "Primary Paycheck 2", 15, 4500, "Yes", "Direct Deposit"]]},
+    {"range": "'📆 Smart Calendar'!A14:F14", "values": [["Payday", "Freelance Sweep", 10, 1200, "Monthly", "PayPal→Chase"]]},
+    {"range": "'📆 Smart Calendar'!A15:F15", "values": [["Bill Due", "Rent", 1, 1800, "Yes", "Chase Checking"]]},
+    {"range": "'📆 Smart Calendar'!A16:F16", "values": [["Bill Due", "Electric", 5, 120, "Yes", "Chase Visa"]]},
+    {"range": "'📆 Smart Calendar'!A17:F17", "values": [["Bill Due", "Internet", 10, 65, "Yes", "Autopay"]]},
+    {"range": "'📆 Smart Calendar'!A18:F18", "values": [["Bill Due", "Car Payment", 15, 485, "Yes", "Autopay"]]},
+    {"range": "'📆 Smart Calendar'!A19:F19", "values": [["Bill Due", "Car Insurance", 20, 175, "Yes", "Autopay"]]},
+    {"range": "'📆 Smart Calendar'!A20:F20", "values": [["Bill Due", "Credit Card Min", 25, 65, "Yes", "Chase Checking"]]},
+    {"range": "'📆 Smart Calendar'!A21:F21", "values": [["Subscription", "Netflix", 15, 15.49, "Yes", "Chase Visa"]]},
+    {"range": "'📆 Smart Calendar'!A22:F22", "values": [["Subscription", "Spotify", 8, 9.99, "Yes", "Discover"]]},
+    {"range": "'📆 Smart Calendar'!A23:F23", "values": [["Savings Transfer", "Emergency Fund", 1, 500, "Yes", "Chase→HYSA"]]},
+    {"range": "'📆 Smart Calendar'!A24:F24", "values": [["Savings Transfer", "Investment", 15, 450, "Yes", "Chase→Fidelity"]]},
+    {"range": "'📆 Smart Calendar'!A26", "values": [["UPCOMING (Next 14 Days)"]]},
+    {"range": "'📆 Smart Calendar'!A27", "values": [["(Events within 14 days of today)"]]},
+    {"range": "'📆 Smart Calendar'!A28", "values": [["=IFERROR(FILTER(B12:F24,(C12:C24>=DAY(TODAY()))*(C12:C24<=DAY(TODAY())+14)),\"No events in next 14 days\")"]]}
+  ]
+}

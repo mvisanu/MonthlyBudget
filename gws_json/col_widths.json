@@ -1,0 +1,67 @@
+{
+  "requests": [
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 611629967, "dimension": "COLUMNS", "startIndex": 0, "endIndex": 1},
+        "properties": {"pixelSize": 220},
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 611629967, "dimension": "COLUMNS", "startIndex": 1, "endIndex": 5},
+        "properties": {"pixelSize": 130},
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 122166217, "dimension": "COLUMNS", "startIndex": 0, "endIndex": 1},
+        "properties": {"pixelSize": 200},
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 122166217, "dimension": "COLUMNS", "startIndex": 2, "endIndex": 4},
+        "properties": {"pixelSize": 120},
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 698513475, "dimension": "COLUMNS", "startIndex": 0, "endIndex": 1},
+        "properties": {"pixelSize": 160},
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 1334531665, "dimension": "COLUMNS", "startIndex": 0, "endIndex": 1},
+        "properties": {"pixelSize": 180},
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 903198120, "dimension": "COLUMNS", "startIndex": 0, "endIndex": 1},
+        "properties": {"pixelSize": 200},
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 503737128, "dimension": "COLUMNS", "startIndex": 0, "endIndex": 1},
+        "properties": {"pixelSize": 120},
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {"sheetId": 503737128, "dimension": "COLUMNS", "startIndex": 1, "endIndex": 6},
+        "properties": {"pixelSize": 130},
+        "fields": "pixelSize"
+      }
+    }
+  ]
+}

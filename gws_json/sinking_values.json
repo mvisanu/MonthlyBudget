@@ -1,0 +1,31 @@
+{
+  "valueInputOption": "USER_ENTERED",
+  "data": [
+    {"range": "'🪣 Sinking Funds'!A1", "values": [["🪣 SINKING FUNDS TRACKER"]]},
+    {"range": "'🪣 Sinking Funds'!A2:H2", "values": [["Fund Name", "Goal ($)", "Target Date", "Current Balance ($)", "Monthly Needed", "% Complete", "Months Left", "Status"]]},
+    {"range": "'🪣 Sinking Funds'!A3:H3", "values": [["Emergency Fund", 18000, "2025-12-31", 2500, "=IFERROR((B3-D3)/MAX(1,IFERROR(DATEDIF(TODAY(),C3,\"M\"),1)),0)", "=IFERROR(D3/B3,0)", "=IFERROR(DATEDIF(TODAY(),C3,\"M\"),0)", "=IF(D3>=B3,\"✅ Funded\",IF(F3>=0.75,\"🟢 On Track\",IF(F3>=0.5,\"🟡 Behind\",\"🔴 Critical\")))"]]},
+    {"range": "'🪣 Sinking Funds'!A4:H4", "values": [["Car Maintenance", 3000, "2025-06-30", 500, "=IFERROR((B4-D4)/MAX(1,IFERROR(DATEDIF(TODAY(),C4,\"M\"),1)),0)", "=IFERROR(D4/B4,0)", "=IFERROR(DATEDIF(TODAY(),C4,\"M\"),0)", "=IF(D4>=B4,\"✅ Funded\",IF(F4>=0.75,\"🟢 On Track\",IF(F4>=0.5,\"🟡 Behind\",\"🔴 Critical\")))"]]},
+    {"range": "'🪣 Sinking Funds'!A5:H5", "values": [["Vacation / Travel", 4000, "2025-08-01", 800, "=IFERROR((B5-D5)/MAX(1,IFERROR(DATEDIF(TODAY(),C5,\"M\"),1)),0)", "=IFERROR(D5/B5,0)", "=IFERROR(DATEDIF(TODAY(),C5,\"M\"),0)", "=IF(D5>=B5,\"✅ Funded\",IF(F5>=0.75,\"🟢 On Track\",IF(F5>=0.5,\"🟡 Behind\",\"🔴 Critical\")))"]]},
+    {"range": "'🪣 Sinking Funds'!A6:H6", "values": [["Home Repair", 5000, "2026-01-01", 0, "=IFERROR((B6-D6)/MAX(1,IFERROR(DATEDIF(TODAY(),C6,\"M\"),1)),0)", "=IFERROR(D6/B6,0)", "=IFERROR(DATEDIF(TODAY(),C6,\"M\"),0)", "=IF(D6>=B6,\"✅ Funded\",IF(F6>=0.75,\"🟢 On Track\",IF(F6>=0.5,\"🟡 Behind\",\"🔴 Critical\")))"]]},
+    {"range": "'🪣 Sinking Funds'!A7:H7", "values": [["Medical / HSA", 2000, "2025-12-31", 350, "=IFERROR((B7-D7)/MAX(1,IFERROR(DATEDIF(TODAY(),C7,\"M\"),1)),0)", "=IFERROR(D7/B7,0)", "=IFERROR(DATEDIF(TODAY(),C7,\"M\"),0)", "=IF(D7>=B7,\"✅ Funded\",IF(F7>=0.75,\"🟢 On Track\",IF(F7>=0.5,\"🟡 Behind\",\"🔴 Critical\")))"]]},
+    {"range": "'🪣 Sinking Funds'!A8:H8", "values": [["Annual Subscriptions", 1200, "2025-11-01", 200, "=IFERROR((B8-D8)/MAX(1,IFERROR(DATEDIF(TODAY(),C8,\"M\"),1)),0)", "=IFERROR(D8/B8,0)", "=IFERROR(DATEDIF(TODAY(),C8,\"M\"),0)", "=IF(D8>=B8,\"✅ Funded\",IF(F8>=0.75,\"🟢 On Track\",IF(F8>=0.5,\"🟡 Behind\",\"🔴 Critical\")))"]]},
+    {"range": "'🪣 Sinking Funds'!A9:H9", "values": [["Holiday / Gifts", 1500, "2025-12-01", 0, "=IFERROR((B9-D9)/MAX(1,IFERROR(DATEDIF(TODAY(),C9,\"M\"),1)),0)", "=IFERROR(D9/B9,0)", "=IFERROR(DATEDIF(TODAY(),C9,\"M\"),0)", "=IF(D9>=B9,\"✅ Funded\",IF(F9>=0.75,\"🟢 On Track\",IF(F9>=0.5,\"🟡 Behind\",\"🔴 Critical\")))"]]},
+    {"range": "'🪣 Sinking Funds'!A10:H10", "values": [["Custom Goal", 1000, "2025-12-31", 0, "=IFERROR((B10-D10)/MAX(1,IFERROR(DATEDIF(TODAY(),C10,\"M\"),1)),0)", "=IFERROR(D10/B10,0)", "=IFERROR(DATEDIF(TODAY(),C10,\"M\"),0)", "=IF(D10>=B10,\"✅ Funded\",IF(F10>=0.75,\"🟢 On Track\",IF(F10>=0.5,\"🟡 Behind\",\"🔴 Critical\")))"]]},
+    {"range": "'🪣 Sinking Funds'!A12", "values": [["MONTHLY PLAN"]]},
+    {"range": "'🪣 Sinking Funds'!A13:B13", "values": [["Total Required Monthly", "=SUM(E3:E10)"]]},
+    {"range": "'🪣 Sinking Funds'!A14:B14", "values": [["Available for Funds", "=IFERROR('🏠 Dashboard'!B28,0)"]]},
+    {"range": "'🪣 Sinking Funds'!A15:B15", "values": [["Surplus / Shortfall", "=B14-B13"]]},
+    {"range": "'🪣 Sinking Funds'!A17", "values": [["PROGRESS"]]},
+    {"range": "'🪣 Sinking Funds'!A18:C18", "values": [["Fund", "Progress Bar", "% Complete"]]},
+    {"range": "'🪣 Sinking Funds'!A19:C19", "values": [["=A3", "=REPT(\"■\",INT(F3*10))&REPT(\"□\",10-INT(F3*10))&\" \"&TEXT(F3,\"0%\")", "=F3"]]},
+    {"range": "'🪣 Sinking Funds'!A20:C20", "values": [["=A4", "=REPT(\"■\",INT(F4*10))&REPT(\"□\",10-INT(F4*10))&\" \"&TEXT(F4,\"0%\")", "=F4"]]},
+    {"range": "'🪣 Sinking Funds'!A21:C21", "values": [["=A5", "=REPT(\"■\",INT(F5*10))&REPT(\"□\",10-INT(F5*10))&\" \"&TEXT(F5,\"0%\")", "=F5"]]},
+    {"range": "'🪣 Sinking Funds'!A22:C22", "values": [["=A6", "=REPT(\"■\",INT(F6*10))&REPT(\"□\",10-INT(F6*10))&\" \"&TEXT(F6,\"0%\")", "=F6"]]},
+    {"range": "'🪣 Sinking Funds'!A23:C23", "values": [["=A7", "=REPT(\"■\",INT(F7*10))&REPT(\"□\",10-INT(F7*10))&\" \"&TEXT(F7,\"0%\")", "=F7"]]},
+    {"range": "'🪣 Sinking Funds'!A24:C24", "values": [["=A8", "=REPT(\"■\",INT(F8*10))&REPT(\"□\",10-INT(F8*10))&\" \"&TEXT(F8,\"0%\")", "=F8"]]},
+    {"range": "'🪣 Sinking Funds'!A25:C25", "values": [["=A9", "=REPT(\"■\",INT(F9*10))&REPT(\"□\",10-INT(F9*10))&\" \"&TEXT(F9,\"0%\")", "=F9"]]},
+    {"range": "'🪣 Sinking Funds'!A26:C26", "values": [["=A10", "=REPT(\"■\",INT(F10*10))&REPT(\"□\",10-INT(F10*10))&\" \"&TEXT(F10,\"0%\")", "=F10"]]},
+    {"range": "'🪣 Sinking Funds'!A28", "values": [["CONTRIBUTION HISTORY LOG"]]},
+    {"range": "'🪣 Sinking Funds'!A29:E29", "values": [["Date", "Fund Name", "Amount Added ($)", "Running Balance", "Note"]]}
+  ]
+}
